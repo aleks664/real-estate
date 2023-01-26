@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Formular-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-LightItalic.woff2') format('woff2'),
+        url('../fonts/Formular-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Light.woff2') format('woff2'),
+        url('../fonts/Formular-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Bold.woff2') format('woff2'),
+        url('../fonts/Formular-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular.woff2') format('woff2'),
+        url('../fonts/Formular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Italic.woff2') format('woff2'),
+        url('../fonts/Formular-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

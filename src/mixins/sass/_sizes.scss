@@ -1,0 +1,3 @@
+@function convertVW($size, $base: 1900) {
+	@return $size/$base*100vw;
+}

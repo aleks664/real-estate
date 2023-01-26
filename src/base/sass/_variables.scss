@@ -1,0 +1,38 @@
+// Font
+$font-family-base: 'Formular', "Arial", sans-serif;
+$font-family-heading: $font-family-base;
+
+
+/**
+ * Grid system
+ * -----------------------------------------
+ */
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+// Grid containers
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1280px,
+	xxl: 1600px
+);
+
+$gray_light: #8f95ac;
+$black_light: #2c2e3e;
+$black_dark: #1e2030;
+$red: #ff2d23;
+
+$font-base-color: $black_light;
+$font-base-link-color: $red;
+
+$base-time-a: 0.3s;

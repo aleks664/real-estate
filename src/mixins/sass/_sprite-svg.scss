@@ -1,0 +1,42 @@
+@use "sass:math";
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon_angle-right {
+    width: (7 / 12) * 1em;
+}
+.icon_arrow-next {
+    width: (17 / 16) * 1em;
+}
+.icon_arrow-prev {
+    width: (17 / 16) * 1em;
+}
+.icon_checked {
+    width: (30 / 30) * 1em;
+}
+.icon_download {
+    width: (12 / 15) * 1em;
+}
+.icon_mail {
+    width: (15 / 12) * 1em;
+}
+.icon_play {
+    width: (25 / 30) * 1em;
+}
+.icon_search {
+    width: (30 / 30) * 1em;
+}
+.icon_select-arrow {
+    width: (14 / 9) * 1em;
+}
+.icon_user {
+    width: (24 / 24) * 1em;
+}
+.icon_youtube {
+    width: (19 / 15) * 1em;
+}
