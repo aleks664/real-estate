@@ -1,0 +1,17 @@
+-
+	var inds = [
+		{val: '3,000', ttl: 'Агенств'},
+		{val: '10,000', ttl: 'Партнеров'},
+		{val: '80,000', ttl: 'Квартир в базе'},
+		{val: '100+', ttl: 'Застройщиков'},
+		{val: '200', ttl: 'Сотрудников'},
+	]
+.section-achievements
+	._container.container
+		._list
+			each itm in inds
+				._itm
+					._box
+						._value.h2=itm.val
+						._ttl.big-txt=itm.ttl
+

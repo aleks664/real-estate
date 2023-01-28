@@ -1,0 +1,22 @@
+nav.main-menu
+	ul._list
+		each itm in menu
+			li._itm
+				a(href=itm.url class=itm.submenu?"js-open-submenu": "")._lnk
+					!=itm.ttl
+					if itm.submenu
+						+icon('angle')._icon
+				if itm.submenu
+					._submenu
+							ul._submenu-list
+								each subitm in itm.submenu
+									li._submenu-itm
+										a(href=subitm.url)._submenu-lnk
+											+icon('furniture')._submenu-icon
+											._desc
+												._submenu-ttl!=subitm.ttl
+												!=subitm.desc
+
+
+
+

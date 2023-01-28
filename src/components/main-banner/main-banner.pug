@@ -1,0 +1,17 @@
+
+.main-banner
+	._container.container
+		._cols
+			._col.-pict
+				+picture({
+					img: 'images/Illustration.png',
+					alt: title,
+					class: 'main-banner__img'
+				})._picture
+			._col.-desc
+				h1._title.
+					Недвижимость <br> Санкт-Петербурга <br> и Москвы
+				include ../form-city/form-city
+
+
+

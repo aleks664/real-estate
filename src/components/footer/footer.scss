@@ -1,0 +1,44 @@
+.footer {
+	flex: 0 0 auto;
+	&__in {
+		border-top: 1px solid  rgba($gray-light, 0.2);
+		padding-top: 15px;
+		margin-top: 30px;
+		padding-bottom: 30px;
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 60px;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: 38px;
+			margin-top: 112px;
+			padding-bottom: 90px;
+		}
+	}
+	&__callback {
+		@include media-breakpoint-up(md) {
+			text-align: right;
+		}
+	}
+	&__callback,
+	&__address {
+		flex: 0 0 percentage(286/1220);
+	}
+
+
+	&__phone {
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		color: inherit;
+		@extend h3;
+		margin: 10px 0;
+		display: inline-block;
+		@include media-breakpoint-up(md) {
+			margin: 0;
+		}
+	}
+}

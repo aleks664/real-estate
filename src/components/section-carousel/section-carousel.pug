@@ -1,0 +1,58 @@
+-
+	var carousel = [
+		{
+			rating: '20',
+			img: 'images/slide1.png'
+		},
+		{
+			rating: '40',
+			img: 'images/slide2.png'
+		},
+		{
+			rating: '80',
+			img: 'images/slide3.png'
+		},
+		{
+			rating: '20',
+			img: 'images/slide1.png'
+		},
+		{
+			rating: '40',
+			img: 'images/slide2.png'
+		},
+		{
+			rating: '80',
+			img: 'images/slide3.png'
+		}
+	]
+mixin ratingBox(data)
+	.rating-box&attributes(attributes)
+		+icon('star')._icon
+		+icon('star')._icon
+		+icon('star')._icon
+		+icon('star')._icon
+		+icon('star')._icon
+		._fluid(style="width: "+data.rating + "%")
+			+icon('star')._icon.-red
+			+icon('star')._icon.-red
+			+icon('star')._icon.-red
+			+icon('star')._icon.-red
+			+icon('star')._icon.-red
+section.section-carousel
+	._container.container
+		h2._title.h1 Обычный слайдер
+		._carousel
+			._swiper-button-prev.swiper-button-prev
+				+icon('angle')._btn-icon.-prev
+			._swiper-button-next.swiper-button-next
+				+icon('angle')._btn-icon.-next
+			._swiper.swiper
+				._swiper-wrapper.swiper-wrapper
+					each itm in carousel
+						._swiper-slide.swiper-slide
+							+picture({
+								img: itm.img,
+								class: 'section-carousel__img'
+							})._picture
+							+ratingBox({rating: itm.rating})._rating-box
+				._swiper-pagination.swiper-pagination

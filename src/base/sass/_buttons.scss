@@ -1,0 +1,32 @@
+.btn {
+	padding: 14px 46px 16px 46px;
+	border: none;
+	outline: none;
+	transition: box-shadow $base-time-a;
+	background: $base-button-bg;
+	color: $base-button-color;
+	cursor: pointer;
+	border-radius: 32.5px;
+	min-height: 50px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: (20/14);
+	font-family: $font-family-button;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		box-shadow: $base-button-shadow-hover;
+	}
+	&_big {
+		font-size: 16px;
+		line-height: 20px;
+		min-height: 60px;
+		padding: 14px 38px 16px 38px;
+	}
+	&[disabled] {
+		cursor: default!important;
+		box-shadow: none!important;
+		background-color: rgba($gray-light, 0.5)!important;
+	}
+}

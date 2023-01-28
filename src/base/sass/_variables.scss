@@ -3,6 +3,7 @@ $font-family-base: 'Formular', "Arial", sans-serif;
 $font-family-heading: $font-family-base;
 
 
+
 /**
  * Grid system
  * -----------------------------------------
@@ -14,25 +15,23 @@ $grid-breakpoints: (
 	sm: 576px,
 	md: 768px,
 	lg: 992px,
-	xl: 1200px,
-	xxl: 1400px
-);
-
-// Grid containers
-$container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
 	xl: 1280px,
 	xxl: 1600px
 );
 
-$gray_light: #8f95ac;
-$black_light: #2c2e3e;
-$black_dark: #1e2030;
+
+$gray-light: #8f95ac;
+$black-light: #2c2e3e;
+$black-dark: #1e2030;
 $red: #ff2d23;
 
-$font-base-color: $black_light;
+$font-base-color: $black-light;
 $font-base-link-color: $red;
 
 $base-time-a: 0.3s;
+
+$base-button-bg: #FF0C00;
+$base-button-color: #FFF;
+$base-button-shadow: 0 0 0;
+$base-button-shadow-hover: 0px 10px 20px rgba(255, 45, 35, 0.3);;
+$font-family-button: $font-family-base;

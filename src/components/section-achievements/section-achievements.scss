@@ -1,0 +1,50 @@
+.section-achievements {
+	padding-top: 5px;
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(lg) {
+		padding-top: 10px;
+	}
+	&__list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+
+		margin: 0 -5px 0;
+		@include media-breakpoint-up(lg) {
+			margin: 0 -15px 0;
+		}
+	}
+	&__itm {
+		display: flex;
+		padding: 10px 5px 0;
+		flex: 0 0 percentage(1/2);
+		max-width: percentage(1/2);
+		@include media-breakpoint-up(md) {
+			flex: 0 0 percentage(1/3);
+			max-width: percentage(1/3);
+		}
+		@include media-breakpoint-up(lg) {
+			padding: 30px 15px 0;
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+	}
+	&__box {
+		background: #FFFFFF;
+		width: 100%;
+		box-shadow: 0px 0px 15px rgba(143, 149, 172, 0.15);
+		border-radius: 5px;
+		transition: box-shadow $base-time-a;
+		padding: 10px;
+		@include media-breakpoint-up(md) {
+			padding: 38px 34px 33px;
+		}
+	}
+	&__value {
+		margin: 0;
+	}
+	&__ttl {
+		margin-top: 4px;
+	}
+}

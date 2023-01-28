@@ -1,0 +1,9 @@
+include ../../mixins/pug/mixin
+footer.footer
+	._container.container
+		._in
+			._address!=address
+			+phone({phone: phone})._phone
+			._callback
+				a(href="#")._callback-lnk Напишите нам
+

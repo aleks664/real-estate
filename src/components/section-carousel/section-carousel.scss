@@ -1,0 +1,113 @@
+.section-carousel {
+	overflow: hidden;
+	padding: 25px 0 15px;
+	@include media-breakpoint-up(md) {
+		padding-top: 50px;
+	}
+	@include media-breakpoint-up(lg) {
+		padding-top: 83px;
+	}
+	&__title {
+		margin: 0;
+		text-align: center;
+	}
+	&__carousel {
+		position: relative;
+		margin-top: 25px;
+		@include media-breakpoint-up(md) {
+			margin-top: 53px;
+
+		}
+		@media (min-width: 1250px) {
+			margin-right: calc(-1*(50vw - 620px));
+		}
+	}
+	&__img {
+		width: 100%;
+		border-radius: 4px;
+		display: block;
+	}
+	&__swiper-slide {
+		border-radius: 4px;
+
+		overflow: hidden;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: percentage(154/340) ;
+			background: linear-gradient(360deg, rgba(24, 24, 30, 0.6) 0%, rgba(23, 24, 31, 0) 82.86%);
+		}
+	}
+	&__swiper-pagination {
+		position: static;
+		margin-top: 15px;
+		display: flex;
+		justify-content: center;
+		@include media-breakpoint-up(md) {
+			margin-top: 53px;
+		}
+		.swiper-pagination-bullet {
+			background: rgba(#8F95AC, 0.3);
+			transition: background-color $base-time-a;
+			width: 7px;
+			min-width: 7px;
+			height: 7px;
+			border-radius: 100%;
+			margin: 0 8.5px;
+			cursor: pointer;
+			&.swiper-pagination-bullet-active {
+				background-color: $red;
+				opacity: 1;
+			}
+		}
+	}
+	&__swiper-button-prev,
+	&__swiper-button-next {
+		position: absolute;
+		top: 50%;
+		width: 50px;
+		height: 50px;
+		margin-top: -25px;
+		border-radius: 100%;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 20px rgba(143, 149, 172, 0.2);
+		transition: background-color $base-time-a , color $base-time-a;
+		color: $black-light;
+		font-size: 10px;
+		align-items: center;
+		justify-content: center;
+		z-index: 10;
+		cursor: pointer;
+		display: none;
+		@media (min-width: 1250px) {
+			display: flex;
+		}
+		&:hover {
+			color: #FFF;
+			background-color: $red;
+		}
+	}
+	&__swiper-button-next {
+		right: 44px;
+	}
+	&__swiper-button-prev {
+		left: 0;
+		margin-left: -25px;
+	}
+	&__btn-icon {
+		&_next {
+			transform: rotate(-90deg);
+		}
+		&_prev {
+			transform: rotate(90deg);
+		}
+	}
+	&__rating-box {
+		position: absolute;
+		bottom: 31px;
+		left: 42px;
+	}
+}

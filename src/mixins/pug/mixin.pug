@@ -1,0 +1,12 @@
+mixin phone(data)
+	- var href = data.phone.replace(/[^0-9\+]/g, '')
+	a&attributes(attributes)(href="tel:"+href)
+		if data.icon
+			+icon(data.icon)(class=data.classIcon)
+		!=data.phone
+mixin picture(data)
+	- var src = data.img.replace(/\.jp[e]?g|.png/g, '')
+	picture&attributes(attributes)
+		source(srcset=src + '.webp' type='image/webp')
+		img(src=data.img alt=data.alt class=data.class loading=data.lazy?"lazy": false)
+

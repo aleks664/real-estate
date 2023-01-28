@@ -1,0 +1,16 @@
+.section-indicators
+	._container.container
+		._col.-ind
+			._indicator.indicator-box
+				.indicator-box__value(style='width: 5%;' data-width='5') 5%
+			._button
+				button(type="button" data-max="25")._btn.btn.btn_big + 25 %
+				._footnote
+				|При нажатии на кнопку прогрессбар заполняется на столько процентов, сколько указано на кнопке
+		._col.-desc
+			._txt.big-txt Большинство онкологических пациентов испытывают страх перед неизвестностью того, что их ожидает в процессе лечения рака.
+			._txt.-hidden.big-txt#txt-hidden Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur eligendi illum porro sint. Blanditiis, eius ex impedit ipsum neque quidem reiciendis rem reprehenderit, saepe sint ut veritatis voluptate voluptatibus!
+			._more
+				a(href="#txt-hidden")._more-lnk.js-slide-toggle
+					span Подробнее
+					+icon('angle')._more-icon

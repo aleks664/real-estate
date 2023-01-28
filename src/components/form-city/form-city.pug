@@ -1,0 +1,26 @@
+form.form-city
+	._row
+		._col
+			.form-group.-mb-t-0.-mb-d-0
+				custom-select.custom-select
+					._head
+						select(placeholder="Выберите город" required)._select
+							option
+							option(value='Москва') Москва
+							option(value='Санкт-Петербург') Санкт-Петербург
+							option(value='Владивосток') Владивосток
+							option(value='Оренбург') Оренбург
+						+icon('angle')._icon
+		._col
+			.form-group.-mb-t-0.-mb-d-0
+				input(type="email" placeholder="info@mail.ru" required).form-control.-bg-tr
+	._button
+		button(type="submit").btn.btn_big Кнопка действия
+	._police
+		input(type="checkbox" id='police' required).checkbox
+		label(for="police").checkbox-box
+			._icon-box
+				+icon('checked')._icon
+			|Отправляя нам данную форму вы соглашаетесь с
+			br
+			a(href="#") политикой конфиденциальности
