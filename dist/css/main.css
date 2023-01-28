@@ -995,7 +995,8 @@ a {
   background-color: #2c2e3e;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: transform 0.3s; }
+  transition: transform 0.3s;
+  z-index: 10; }
   .main-menu:not(.is-open) {
     transform: translateX(-100%); }
   @media (min-width: 768px) {
